@@ -1,11 +1,4 @@
-// console.log(products)
-
-// const productsDispo = products.slice(5, 14)
-// console.log(productsDispo)
-
-
-
-
+//despejo las categorias que quiero
 const categoriesDisponi = (productsDispo) => {
 
     let disponible = []
@@ -20,7 +13,7 @@ const categoriesDisponi = (productsDispo) => {
 
 }
 
-// console.log(categoriesDisponi(products))
+// despejo todas las categorias
 
 const getCategoryName = (products) => {
 
@@ -45,20 +38,22 @@ console.log(filter)
 
 // alert(`las categorias disponibles son: ${filter.join(", ")}`)
 
+// despejo los titulos de los productos disponibles
 
 const productTitle = categoriesEnable.map((product) => product.title
 
 )
-
+// ordenos los productos de A a Z
 const productsAyZ = productTitle.sort()
 
-// console.log(productTitle)
+console.log(productTitle)
 
 const listProducts = productsAyZ.map((product, i)=>
 `${i + 1 } ${product} \n`  
 
 )
-console.log(listProducts)
+
+// le pregunto al usuario que producto desea seleccionar ingresando el numero del producto
 
 let eleccion = prompt(`ingrese el numero del producto que desea comprar:\n ${listProducts}`)
 
